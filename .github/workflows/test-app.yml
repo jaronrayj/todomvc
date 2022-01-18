@@ -14,4 +14,5 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           build: npm run build
+          wait-on: GITHUB_SERVER_URL
           start: npm start
