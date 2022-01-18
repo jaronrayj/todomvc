@@ -15,5 +15,4 @@ jobs:
         run: echo "Hello $FIRST_NAME $middle_name $Last_Name, today is Monday! $GITHUB_SERVER_URL"
         with:
           build: npm run build
-          wait-on: ${{GITHUB_SERVER_URL}}
           start: npm start
