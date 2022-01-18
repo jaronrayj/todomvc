@@ -22,6 +22,7 @@ jobs:
           echo "GITHUB_SHA: ${GITHUB_SHA}"
           echo "GITHUB_REF: ${GITHUB_REF}"
           echo "GITHUB_SERVER_URL: ${GITHUB_SERVER_URL}"
+          echo "RUNNER_TEMP: ${RUNNER_TEMP}"
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
