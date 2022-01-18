@@ -11,8 +11,6 @@ jobs:
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress run
-        run: echo "Deploying to production server on branch ${GITHUB_REF} ${GITHUB_SERVER_URL}"
-        uses: cypress-io/github-action@v2
-        with:
-          build: npm run build
-          start: npm start
+        uses: |
+          cypress-io/github-action@v2
+          echo "Deploying to production server on branch ${GITHUB_REF} ${GITHUB_SERVER_URL}"
